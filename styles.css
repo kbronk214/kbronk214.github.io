@@ -168,4 +168,10 @@ button {
   margin-top: 5px;
   box-sizing: border-box;
 }
+  section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
 }
