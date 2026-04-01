@@ -174,4 +174,10 @@ button {
   margin: 0 auto;
   padding: 20px;
 }
+  .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
 }
