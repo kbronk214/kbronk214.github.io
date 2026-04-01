@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Request | Seacoast Independent Tech Services</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav-container">
+        <img
+          src="images/logo.png"
+          class="logo"
+          alt="Seacoast Independent Tech Services"
+        />
+
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="request.html">Service Request</a>
+          <a href="testimonials.html">Testimonials</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <h2>Service Request</h2>
+    <link rel="stylesheet" href="css/styles.css" />
+    <form
+      action="mailto:info@seacoastindependenttechservices.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="service">Service Needed:</label>
+      <select name="service">
+        <option>Computer Repair</option>
+        <option>Network Setup</option>
+        <option>IT Consulting</option>
+      </select>
+
+      <label for="details">Details:</label>
+      <textarea name="details"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+    <footer>
+      <p>© 2026 Seacoast Independent Tech Services</p>
+    </footer>
+  </body>
+</html>
