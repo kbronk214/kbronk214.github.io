@@ -148,4 +148,24 @@ footer {
   .hero img {
     width: 100%;
   }
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
 }
