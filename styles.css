@@ -14,19 +14,18 @@ body {
 /* HEADER */
 header {
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* keeps it centered */
   background: #a7c9c6;
   box-sizing: border-box;
 }
 
 nav {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 nav a {
@@ -38,6 +37,14 @@ nav a {
 
 nav a:hover {
   color: #0f766e;
+}
+.nav-container {
+  width: 100%;
+  max-width: 1000px;   /* same as your sections */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -52,6 +59,11 @@ section,
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+}
+.container p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* HERO */
