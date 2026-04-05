@@ -11,10 +11,10 @@ body {
   align-items: center;
 }
 
+/* HEADER */
 header {
   width: 100%;
   padding: 20px 40px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,6 +44,17 @@ nav a:hover {
   width: 90px;
 }
 
+/* LAYOUT SECTIONS */
+section,
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* HERO */
 .hero {
   flex-grow: 1;
   display: flex;
@@ -63,20 +74,24 @@ nav a:hover {
 .hero h2 {
   font-size: clamp(18px, 3vw, 24px);
 }
+
 .hero p {
   max-width: 700px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
+
 .hero-image {
-  max-width: 400px;
   width: 100%;
+  max-width: 450px;
   height: auto;
   display: block;
   margin: 20px auto;
+  border-radius: 8px;
 }
 
+/* BUTTON */
 .button {
   display: inline-block;
   background: #0f766e;
@@ -92,6 +107,29 @@ nav a:hover {
   background: #115e59;
 }
 
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* FOOTER */
 footer {
   width: 100%;
   text-align: center;
@@ -99,7 +137,8 @@ footer {
   background: #a3b7c8;
   font-size: 14px;
 }
-/* Tablet */
+
+/* TABLET */
 @media (max-width: 768px) {
   nav {
     gap: 20px;
@@ -112,9 +151,13 @@ footer {
   .hero h2 {
     font-size: 20px;
   }
+
+  .hero-image {
+    max-width: 350px;
+  }
 }
 
-/* Mobile */
+/*  MOBILE */
 @media (max-width: 480px) {
   header {
     flex-direction: column;
@@ -122,7 +165,6 @@ footer {
   }
 
   .logo {
-    position: static;
     margin-bottom: 10px;
   }
 
@@ -144,39 +186,7 @@ footer {
     font-size: 14px;
   }
 
-  .hero img {
-    width: 100%;
+  .hero-image {
+    max-width: 90%;
   }
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-}
-
-label {
-  margin-top: 10px;
-}
-
-input,
-textarea,
-select,
-button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  box-sizing: border-box;
-}
-  section {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
-  .container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-}
 }
