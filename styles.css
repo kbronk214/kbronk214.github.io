@@ -13,6 +13,14 @@ html, body {
   padding: 20px;
 }
 
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;   /* 👈 THIS centers it */
+  display: flex;
+  flex-direction: column;
+}
+
 /* =========================
    HEADER / NAV
 ========================= */
