@@ -1,31 +1,48 @@
-html,
-body {
-  height: 100%;
+html, body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
   background: linear-gradient(180deg, #b8d6d3, #a7c9c6);
   color: #2a2a2a;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
 }
 
-/* HEADER */
+/* Center page content */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+
 header {
   width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center; /* keeps it centered */
   background: #a7c9c6;
+  padding: 15px 20px;
   box-sizing: border-box;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
 }
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 nav a {
@@ -35,74 +52,53 @@ nav a {
   transition: 0.2s;
 }
 
-nav a:hover {
+nav a: hover {
   color: #0f766e;
 }
-.nav-container {
-  width: 100%;
-  max-width: 1000px;   /* same as your sections */
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.logo {
-  width: 90px;
-}
+/* =========================
+   HERO SECTION
+========================= */
 
-/* LAYOUT SECTIONS */
-section,
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-.container p {
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* HERO */
 .hero {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 60px 20px;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.hero h1 {
-  font-size: clamp(24px, 5vw, 36px);
+  padding: 40px 20px;
 }
 
 .hero h2 {
-  font-size: clamp(18px, 3vw, 24px);
+  margin-bottom: 10px;
 }
 
 .hero p {
   max-width: 700px;
+  margin: 0 auto 20px;
   line-height: 1.6;
-  margin-bottom: 20px;
 }
-
 
 .hero-image {
   width: 100%;
-  max-width: 280px;
+  max-width: 280px;   /* 👈 smaller image */
   height: auto;
   display: block;
   margin: 20px auto;
+  border-radius: 8px;
 }
 
-/* BUTTON */
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+  text-align: center;
+  padding: 10px 0;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 .button {
   display: inline-block;
   background: #0f766e;
@@ -110,7 +106,6 @@ section,
   padding: 12px 22px;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 20px;
   transition: 0.2s;
 }
 
@@ -118,65 +113,41 @@ section,
   background: #115e59;
 }
 
-/* FORM */
-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-}
+/* =========================
+   FOOTER
+========================= */
 
-label {
-  margin-top: 10px;
-}
-
-input,
-textarea,
-select,
-button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  box-sizing: border-box;
-}
-
-/* FOOTER */
 footer {
   width: 100%;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   background: #a3b7c8;
   font-size: 14px;
+  margin-top: 40px;
 }
 
-/* TABLET */
+/* =========================
+   TABLET
+========================= */
+
 @media (max-width: 768px) {
   nav {
-    gap: 20px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero h2 {
-    font-size: 20px;
+    gap: 15px;
   }
 
   .hero-image {
-    max-width: 350px;
+    max-width: 220px;
   }
 }
 
-/*  MOBILE */
-@media (max-width: 480px) {
-  header {
-    flex-direction: column;
-    padding: 20px;
-  }
+/* =========================
+   MOBILE
+========================= */
 
-  .logo {
-    margin-bottom: 10px;
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
   }
 
   nav {
@@ -186,18 +157,10 @@ footer {
   }
 
   .hero {
-    padding: 40px 15px;
-  }
-
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero p {
-    font-size: 14px;
+    padding: 30px 15px;
   }
 
   .hero-image {
-    max-width: 90%;
+    max-width: 180px;
   }
 }
