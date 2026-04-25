@@ -96,11 +96,10 @@ section,
 
 .hero-image {
   width: 100%;
-  max-width: 450px;
+  max-width: 280px;
   height: auto;
   display: block;
   margin: 20px auto;
-  border-radius: 8px;
 }
 
 /* BUTTON */
