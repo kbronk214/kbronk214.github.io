@@ -37,14 +37,16 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* spreads logo + nav nicely */
 }
-
+/* Logo styles */
 .logo {
-  margin-right: 0; /* remove the push */
+  margin-right: auto;
+  max-height: 80px;
+  width: auto;
 }
-
+/* Navigation styles */
 nav {
+  margin: 0 auto;
   display: flex;
   gap: 25px;
 }
