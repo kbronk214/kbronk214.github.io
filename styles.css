@@ -38,18 +38,11 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between; /* spreads logo + nav nicely */
 }
 
 .logo {
-  margin-right: auto; 
-  max-height: 80px;
-  width: auto;
-}
-
-nav {
-  margin: 0 auto; 
-  display: flex;
-  gap: 25px;
+  margin-right: 0; /* remove the push */
 }
 
 nav a {
